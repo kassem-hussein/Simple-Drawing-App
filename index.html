@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Drawing App</title>
+</head>
+<body>
+      <div class="type">
+            <div data-name="L" class="option active" id="line">Line</div>
+            <div data-name="R" class="option">Rectangle</div>
+            <div data-name="C" class="option">Circle</div>
+            <div data-name="T" class="option">Triangle</div>
+            <div data-name="E" class="option">Easer</div>
+      </div>
+      <div class="actions">
+            <div id="clear">Clear</div>
+            <div class="color">
+                  <input type="color" id="color">
+            </div>
+            <div class="fill">
+                  <label for="filled">Fill</label>
+                  <input type="checkbox" id="filled"/>
+            </div>
+            <div class="thin">
+                  <label for="thin">Thin</label>
+                  <input type="number" id="thin" value="2"/>
+            </div>
+      </div>
+      <canvas id="whiteboard"></canvas>
+      <div id="xy">{x: 500 , y : 200 }</div>
+      <script src="main.js"></script>
+</body>
+</html>
